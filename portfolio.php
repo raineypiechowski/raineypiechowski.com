@@ -17,7 +17,7 @@ require("static/includes/header.inc.php");
             </div>
             <div class="content-wrapper">
                 <p>
-                    <a class="link" href="https://github.com/raineypiechowski/raineypiechowski.com.git">Repository for this site</a>
+                    <a class="link" href="https://github.com/raineypiechowski/raineypiechowski.com" target="_blank">Repository for this site &rarr;</a>
                 </p>
             </div>
             <?php require("static/includes/footer.inc.php"); ?>

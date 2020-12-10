@@ -1,0 +1,4 @@
+.page-title-block > h1{
+    background-image: linear-gradient(90deg, var(--white) 0px, var(--white) 53px, var(--blue) 53px);
+    margin-left: -53px;
+}

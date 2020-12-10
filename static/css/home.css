@@ -1,0 +1,57 @@
+.main-banner{
+    max-width: 500px;
+    height: 120vw;
+    max-height: 550px;
+    position: relative;
+    margin: auto;
+}
+
+.main-banner > .first-box{
+    width: 70%;
+    height: 200px;
+    background-color: var(--light-grey);
+    position: absolute;
+    left: 10%;
+    top: 0px;
+}
+
+.main-banner > .second-box{
+    box-sizing: border-box;
+    display: flex;
+    width: 70vw;
+    max-width: 350px;
+    height: 100vw;
+    max-height: 450px;
+    background-color: var(--blue);
+    background-image: repeating-linear-gradient(45deg, var(--dark-blue) 0px, var(--dark-blue) 24px, var(--blue) 24px, var(--blue) 36px, var(--orange) 36px, var(--orange) 60px, var(--dark-orange) 60px, var(--dark-orange) 72px);
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner > .second-box > div{
+    width: 40vw;
+    max-width: 175px;
+    height: 120vw;
+    max-height: 600px;
+    background-color: var(--blue);
+    background-image: repeating-linear-gradient(45deg, var(--dark-blue) 0px, var(--dark-blue) 24px, var(--blue) 24px, var(--blue) 36px, var(--orange) 36px, var(--orange) 60px, var(--dark-orange) 60px, var(--dark-orange) 72px);
+    transform: rotate(45deg);
+}
+
+.main-banner > .third-box{
+    width: 55vw;
+    max-width: 250px;
+    height: 55vw;
+    max-height: 250px;
+    background-color: var(--blue);
+    background-image: url(../img/prof-pic.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 0px;
+    bottom: 20%;
+}

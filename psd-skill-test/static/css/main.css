@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+:root{
+    --dark-grey: #373e47;
+    --light-grey: #b0b4be;
+    --sand-blue: #414e6a;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.banner{
+    height: 50vw;
+    min-height: 400px;
+    background-image: url(../img/banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.top-nav{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.top-nav > img{
+    height: 30px;
+}
+
+.main-nav{
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.main-nav > div{
+    display: -webkit-flex;
+    display: flex;
+    max-width: 800px;
+    height: 50px;
+    margin: auto;
+    align-items: center;
+}
+
+.main-nav > div > img{
+    height: 30px;
+}
+
+.vegan-hamburger-icon{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.vegan-hamburger-icon > div{
+    width: 100%;
+    height: 4px;
+    background-color: var(--sand-blue);
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+
+.main-nav > div > ul{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.main-nav > div > ul > li > a{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: var(--sand-blue);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.banner-2{
+    height: 700px;
+    padding-top: 50px;
+    background-image: url(../img/banner-3.jpg);
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.banner-content{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.banner-content > div{
+    max-width: 800px;
+    margin: auto;
+}
+
+.banner-content img{
+    height: 130px;
+}
+
+.banner-content > p{
+    margin-left: 100px;
+    color: var(--dark-grey);
+}
+
+.carousell-wrapper{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(65, 78, 106, 0.9);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#slide-container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 10px;
+}
+
+.carousell-wrapper > div > div > img{
+    display: block;
+    width: 200px;
+}
+
+#carousell-btn-container{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#carousell-btn-container > button{
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    margin: 2px;
+}
+
+#carousell-btn-container > button:hover, #carousell-btn-container > button:active, #carousell-btn-container > button:focus{
+    background-color: #fff;
+}
+
+
+
+.climb-header{
+    display: -webkit-flex;
+    display: flex;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.climb-header > div{
+    display: -webkit-flex;
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+.climb-header > div > img{
+    height: 100px;
+    margin-right: 30px;
+}
+
+.climb-header > div > p{
+    display: -webkit-flex;
+    display: flex;
+    color: var(--dark-grey);
+    align-items: center;
+}
+
+.climb-nav{
+    height: 30px;
+    padding-left: 10px;
+    background-color: var(--sand-blue);
+}
+
+.climb-nav ul{
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+}
+
+.climb-nav li > a{
+    display: block;
+    height: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--light-grey);
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.climb-nav .selected, .climb-nav li > a:hover{
+    background-color: var(--light-grey);
+    color: var(--sand-blue);
+}
+
+.banner-3{
+    height: 500px;
+    background-image: url(../img/banner-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-3 > div{
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.schedule-card{
+    max-width: 800px;
+    margin: auto;
+}
+
+.schedule-card > div{
+    display: inline-block;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.schedule-card > div > h3{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: var(--sand-blue);
+    margin-bottom: 30px;
+}
+
+.schedule-card > div > table{
+    margin: -20px;
+}
+
+.schedule-card > div > table td{
+    font-size: 14px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--dark-grey);
+}
+
+footer{
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--sand-blue);
+    align-items: center;
+}
+
+footer > div{
+    display: -webkit-flex;
+    display: flex;
+    max-width: 800px;
+    height: 50px;
+    margin: auto;
+    align-items: center;
+}
+
+footer > div > img{
+    height: 30px;
+    margin-right: 20px;
+}
+
+footer > div > div{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer > div > div > p{
+    font-size: 11px;
+    font-weight: bolder;
+    color: var(--light-grey);
+}
+
+@media only screen and (max-width: 870px) {
+    #slide-container{
+        grid-template-columns: 200px 200px 200px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    #slide-container{
+        grid-template-columns: 200px 200px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .climb-header > div{
+        display: block;
+    }
+
+    .climb-header > div > p{
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #slide-container{
+        grid-template-columns: 200px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .vegan-hamburger-icon{
+        display: block;
+    }
+
+    .main-nav > div > ul{
+        display: none;
+        width: 150px;
+        padding: 20px;
+        background-color: rgb(255, 255, 255, 0.7);
+        z-index: 1;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+    }
+}

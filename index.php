@@ -1,52 +1,37 @@
 <?php
-require("../config.inc.php");
+require_once("../config.inc.php");
+require_once("static/includes/PagesDataAccess.inc.php");
 
-if ($_GET["path"] == "") {
-	require_once("home.php");
-	exit();
+$pda = new PagesDataAccess(get_conn());
+
+if (isset($_GET["path"])) {
+    if (string_ends_with($_GET["path"], '/')) {
+        $path = rtrim($_GET["path"], '/');
+        header("Location: " . BASE_URL . $path);
+        exit();
+    }
+
+    $path = $_GET["path"];
+} else {
+    $path = "";
 }
 
-if ($_GET["path"] == "skills" || $_GET["path"] == "skills/") {
-	require_once("skills.php");
-	exit();
+$file_name = $pda->check_page_existance($path);
+
+if ($file_name) {
+	require_once($file_name);
+} else {
+	header("HTTP/1.0 404 Not Found");
+	require_once("404.php");
 }
 
-if ($_GET["path"] == "portfolio" || $_GET["path"] == "portfolio/") {
-	require_once("portfolio.php");
-	exit();
-}
-
-if ($_GET["path"] == "education" || $_GET["path"] == "education/") {
-	require_once("education.php");
-	exit();
-}
-
-if ($_GET["path"] == "references" || $_GET["path"] == "references/") {
-	require_once("references.php");
-	exit();
-}
-
-if ($_GET["path"] == "contact" || $_GET["path"] == "contact/") {
-	require_once("contact.php");
-	exit();
-}
-
-if ($_GET["path"] == "privacy-policy" || $_GET["path"] == "privacy-policy/") {
-	require_once("privacy-policy.php");
-	exit();
-}
-
-if ($_GET["path"] == "error" || $_GET["path"] == "error/") {
-	require_once("error.php");
-	exit();
-}
-
-if ($_GET["path"] == "json-test" || $_GET["path"] == "json-test/") {
-	require_once("json-test.html");
-	exit();
-}
-
-header("HTTP/1.0 404 Not Found");
-require_once("404.php");
+//functions
+function string_ends_with($str, $lastString) {
+    $count = strlen($lastString);
+    if ($count == 0) {
+       return true;
+    }
+    return (substr($str, -$count) === $lastString);
+ }
 
 

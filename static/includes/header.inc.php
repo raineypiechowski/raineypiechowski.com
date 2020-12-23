@@ -4,11 +4,11 @@
 	<meta name="description" content="<?php echo($page_description); ?>">
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php echo(BASE_URL . "/static/img/favicon.ico"); ?>">
+    <link rel="shortcut icon" href="<?php echo(BASE_URL . "static/img/favicon.ico"); ?>">
 	<title><?php echo($page_title); ?></title>
-	<link rel="stylesheet" href="<?php echo(BASE_URL . "/static/css/reset.css"); ?>">
-	<link rel="stylesheet" href="<?php echo(BASE_URL . "/static/css/main.css"); ?>">
-	<script src="<?php echo(BASE_URL . "/static/js/main.js"); ?>"></script>
+	<link rel="stylesheet" href="<?php echo(BASE_URL . "static/css/reset.css"); ?>">
+	<link rel="stylesheet" href="<?php echo(BASE_URL . "static/css/main.css"); ?>">
+	<script src="<?php echo(BASE_URL . "static/js/main.js"); ?>"></script>
 </head>
 <body>
 	<header>

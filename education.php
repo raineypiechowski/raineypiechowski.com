@@ -5,7 +5,7 @@ $page_description = "My Education history from high school till now.";
 require("static/includes/header.inc.php");
 $side_bar_selected = "education";
 ?>
-    <link rel="stylesheet" href="<?php echo(BASE_URL . "/static/css/education.css"); ?>">
+    <link rel="stylesheet" href="<?php echo(BASE_URL . "static/css/education.css"); ?>">
     <main>
         <?php
         require("static/includes/side-bar.inc.php");

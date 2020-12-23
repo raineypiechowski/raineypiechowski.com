@@ -9,7 +9,7 @@ require("static/includes/header.inc.php");
 		$side_bar_selected = "home";
 		require("static/includes/side-bar.inc.php");
 		?>
-		<link rel="stylesheet" href="<?php echo(BASE_URL . "/static/css/home.css"); ?>">
+		<link rel="stylesheet" href="<?php echo(BASE_URL . "static/css/home.css"); ?>">
 		<div class="content-frame">
 			<div class="content-wrapper">
 				<section class="main-banner">

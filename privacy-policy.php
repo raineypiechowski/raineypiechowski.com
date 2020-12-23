@@ -4,7 +4,7 @@ $page_description = "Site Privacy Policy";
 
 require("static/includes/header.inc.php");
 ?>
-	<link rel="stylesheet" href="<?php echo(BASE_URL . "/static/css/privacy-policy.css"); ?>">
+	<link rel="stylesheet" href="<?php echo(BASE_URL . "static/css/privacy-policy.css"); ?>">
 	<main>
 		<?php
 		$side_bar_selected = "";
@@ -20,7 +20,7 @@ require("static/includes/header.inc.php");
 				<p class="margin-bottom-24">
 					Thank you for choosing to be part of our community here (“we”, “us”, or “our”).
 					We are committed to protecting your personal information and your right to privacy.
-					If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us <a class="link" target="_blank" href="../contact/">here</a>.
+					If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us <a class="link" target="_blank" href="<?php echo(BASE_URL . "contact"); ?>">here</a>.
 				</p>
 				<p class="margin-bottom-24">
 					When you visit our and use our services, you trust us with your personal information.
@@ -116,7 +116,7 @@ require("static/includes/header.inc.php");
 					We do not knowingly solicit data from or market to children under 18 years of age.
 					By using the, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the.
 					If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records.
-					If you become aware of any data we have collected from children under age 18, please contact us <a class="link" target="_blank" href="../contact/">here</a>.
+					If you become aware of any data we have collected from children under age 18, please contact us <a class="link" target="_blank" href="<?php echo(BASE_URL . "contact"); ?>">here</a>.
 				</p>
 				<h3 class="margin-bottom-24" id="item-6">6. What are Your Privacy Rights?</h3>
 				<p class="margin-bottom-24">
@@ -163,11 +163,11 @@ require("static/includes/header.inc.php");
 				</p>
 				<h3 class="margin-bottom-24" id="item-10">10. How Can You Contact us Regarding This Privacy Policy?</h3>
 				<p class="margin-bottom-24">
-					If you have questions or comments about this policy, you may email us <a class="link" target="_blank" href="../contact/">here</a>.
+					If you have questions or comments about this policy, you may email us <a class="link" target="_blank" href="<?php echo(BASE_URL . "contact"); ?>">here</a>.
 				<h3 class="margin-bottom-24" id="item-11">11. How Can You Review, Update, or Delete Data we Collect From You?</h3>
 				<p>
 					Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances.
-					To request to review, update, or delete your personal information, please contact us by clicking here <a class="link" href="../contact/">here</a>.
+					To request to review, update, or delete your personal information, please contact us by clicking here <a class="link" href="<?php echo(BASE_URL . "contact"); ?>">here</a>.
 					We will respond to your request within 3 days.
 				</p>
 			</div>

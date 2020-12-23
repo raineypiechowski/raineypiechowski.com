@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 require("static/includes/header.inc.php");
 ?>
-	<link rel="stylesheet" href="<?php echo(BASE_URL . "/static/css/contact.css"); ?>">
+	<link rel="stylesheet" href="<?php echo(BASE_URL . "static/css/contact.css"); ?>">
 	<main>
 		<?php
 		$side_bar_selected = "contact";
@@ -63,7 +63,7 @@ require("static/includes/header.inc.php");
 					<?php
 				} else {
 					?>
-					<script src="<?php echo(BASE_URL . "/static/js/contact.js"); ?>"></script>
+					<script src="<?php echo(BASE_URL . "static/js/contact.js"); ?>"></script>
 					<p class="margin-bottom-24">
 						Contact me now and I will get back to you shortly.
 					</p>

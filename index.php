@@ -41,6 +41,11 @@ if ($_GET["path"] == "error" || $_GET["path"] == "error/") {
 	exit();
 }
 
+if ($_GET["path"] == "json-test" || $_GET["path"] == "json-test/") {
+	require_once("json-test.html");
+	exit();
+}
+
 header("HTTP/1.0 404 Not Found");
 require_once("404.php");
 
